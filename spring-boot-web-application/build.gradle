@@ -19,9 +19,12 @@ repositories {
 }
 
 dependencies {
+    implementation 'javax.inject:javax.inject:1'
+    implementation 'javax.validation:validation-api:2.0.1.Final'
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+    compileOnly 'com.google.code.findbugs:jsr305:3.0.2'
     runtimeOnly 'org.apache.tomcat.embed:tomcat-embed-jasper'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
